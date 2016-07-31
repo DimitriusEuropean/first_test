@@ -50,11 +50,11 @@ header {
     box-shadow: 0 8px 20px -6px rgba(0, 0, 0, .2);
     position: relative;
 
-    .logo img {
+  /*  .logo img {
 	display: inline-block;
-	}
+	}*/
 
-	h1 span {
+	.header__number {
 	border: 1px solid #00b3ff;
 	border-radius: 4px;
 	padding: 10px;
@@ -77,48 +77,93 @@ header {
 .steps {
 	margin-bottom: 25px;
 
-	ul {
+	&-list {
 		padding: 0;
 		margin: 40px 0 0 0;
 		list-style: none;
 
-			li {
+			&__item {
 				width: 80%;
 				border: 1px solid #dde3e7;
 				padding: 25px 0 25px 70px;
 				margin: 15px 0;
+					&_first {
+						@include step_bg('../img/download_icon.png');
+					}
+
+					&_second {
+						@include step_bg('../img/gears_icon.png');
+					}
+
+					&_third {
+						@include step_bg('../img/clock_icon.png');
+					}
 			}
 
-			.step {
+			&__point {
 				text-transform: uppercase;
 				color: #414141;	
 				padding-right: 15px;
 				font-family: "ProximaNova-Semibold", "ProximaNova-Light", sans-serif;
+				&_second {
+					font-weight: 900;
+				}
+			}
+
+			&__link {
+				color: $click;
+				font-weight: 700;
 			}
 	}
 
-	.second span {
-		font-weight: 900;
+}
+
+.down-week {
+	margin: 0px 0 0 60px;
+	display: inline-block;
+	width: 40%;
+	color: #979da6;
+	padding-top: 50px;
+	position: relative;
+		&::before {
+			content: '';
+		    position: absolute;
+		    top: 54px;
+		    left: -34px;
+		    height: 68px;
+		    width: 15px;
+		    background: url(../img/Downloads-this-week.png) no-repeat;
+		    background-position: 0 0;
+		}
+		&::after {
+			content: '';
+		    position: absolute;
+		    top: 54px;
+		    right: 27px;
+		    height: 68px;
+		    width: 17px;
+		    background: url(../img/Downloads-this-week.png) no-repeat;
+		    background-position: -31px 0;
+		}
+		&__amount {
+		color: #00b0ff;
+		margin: 10px 0;
+		}
+		
+		&__sub-header{
+			font-size: 14px;
+		}	
+		
+		&__star {
+			color: #979da6;
+		}	
+}
+
+.TV {
+		margin-top: 40px;
 	}
 
-	.first a {
-		color: $click;
-		font-weight: 700;
-	}
-
-	.first {
-		@include step_bg('../img/download_icon.png');
-	}
-
-	.second {
-		@include step_bg('../img/gears_icon.png');
-	}
-
-	.third {
-		@include step_bg('../img/clock_icon.png');
-	}
-
-	button {
+.steps-button {
 		width: 80%;
 		margin-top: 30px;
 		color: #ffffff;
@@ -127,65 +172,22 @@ header {
 		padding: 30px 0;
 		font-size: 21px;
 		@include radius(4px);
-	}
+}
 
-	.TV {
-		margin-top: 40px;
-	}
-
-	.down_here {
+.down-here {
 		text-align: center;
 		margin-top: 10px;
-		width: 80%;
 		font-size: 14px;
 		color: $click;
-	}
-	
-	.down_week {
-		margin: 0px 0 0 60px;
-		display: inline-block;
-		width: 40%;
-		color: #979da6;
-		padding-top: 50px;
-		position: relative;
-			&::before {
-				content: '';
-			    position: absolute;
-			    top: 54px;
-			    left: -34px;
-			    height: 68px;
-			    width: 15px;
-			    background: url(../img/Downloads-this-week.png) no-repeat;
-			    background-position: 0 0;
-			}
-			&::after {
-				content: '';
-			    position: absolute;
-			    top: 54px;
-			    right: 27px;
-			    height: 68px;
-			    width: 17px;
-			    background: url(../img/Downloads-this-week.png) no-repeat;
-			    background-position: -31px 0;
-			}
-			h1 {
-			color: #00b0ff;
-			margin: 10px 0;
-			}
-			
-			p {
-				font-size: 14px;
-			}	
-			
-			span {
-				color: #979da6;
-			}	
-	}
+}
 
-	.shopper {
+.down-here_width {
+	width: 80%;
+}
+
+.shopper {
 		display: inline-block;
 		vertical-align: text-bottom;
-	}
 }
 
 .company {
@@ -428,7 +430,7 @@ header {
 		text-align: center;
 		margin-top: 10px;
 		font-size: 14px;
-		color: #00aaff;
+		color: $click;
 	}
 
 	.map {

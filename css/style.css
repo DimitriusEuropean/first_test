@@ -33,11 +33,11 @@ header {
   line-height: 75px;
   box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.2);
   position: relative;
+  /*  .logo img {
+	display: inline-block;
+	}*/
 }
-header .logo img {
-  display: inline-block;
-}
-header h1 span {
+header .header__number {
   border: 1px solid #00b3ff;
   border-radius: 4px;
   padding: 10px;
@@ -50,68 +50,53 @@ header::after {
   left: 31%;
   border: 13px solid blanchedalmond;
   border-color: transparent transparent #ffffff #ffffff;
-  transform-origin: 0 0;
-  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   box-shadow: -4px 4px 11px 0 rgba(0, 0, 0, 0.1);
 }
 
 .steps {
   margin-bottom: 25px;
 }
-.steps ul {
+.steps-list {
   padding: 0;
   margin: 40px 0 0 0;
   list-style: none;
 }
-.steps ul li {
+.steps-list__item {
   width: 80%;
   border: 1px solid #dde3e7;
   padding: 25px 0 25px 70px;
   margin: 15px 0;
 }
-.steps ul .step {
+.steps-list__item_first {
+  background: url("../img/download_icon.png") center left 6% no-repeat;
+}
+.steps-list__item_second {
+  background: url("../img/gears_icon.png") center left 6% no-repeat;
+}
+.steps-list__item_third {
+  background: url("../img/clock_icon.png") center left 6% no-repeat;
+}
+.steps-list__point {
   text-transform: uppercase;
   color: #414141;
   padding-right: 15px;
   font-family: "ProximaNova-Semibold", "ProximaNova-Light", sans-serif;
 }
-.steps .second span {
+.steps-list__point_second {
   font-weight: 900;
 }
-.steps .first a {
+.steps-list__link {
   color: #00aaff;
   font-weight: 700;
 }
-.steps .first {
-  background: url("../img/download_icon.png") center left 6% no-repeat;
-}
-.steps .second {
-  background: url("../img/gears_icon.png") center left 6% no-repeat;
-}
-.steps .third {
-  background: url("../img/clock_icon.png") center left 6% no-repeat;
-}
-.steps button {
-  width: 80%;
-  margin-top: 30px;
-  color: #ffffff;
-  background: #00b0ff url(../img/download.png) center right 8% no-repeat;
-  border: 0;
-  padding: 30px 0;
-  font-size: 21px;
-  border-radius: 4px;
-}
-.steps .TV {
-  margin-top: 40px;
-}
-.steps .down_here {
-  text-align: center;
-  margin-top: 10px;
-  width: 80%;
-  font-size: 14px;
-  color: #00aaff;
-}
-.steps .down_week {
+
+.down-week {
   margin: 0px 0 0 60px;
   display: inline-block;
   width: 40%;
@@ -119,7 +104,7 @@ header::after {
   padding-top: 50px;
   position: relative;
 }
-.steps .down_week::before {
+.down-week::before {
   content: '';
   position: absolute;
   top: 54px;
@@ -129,7 +114,7 @@ header::after {
   background: url(../img/Downloads-this-week.png) no-repeat;
   background-position: 0 0;
 }
-.steps .down_week::after {
+.down-week::after {
   content: '';
   position: absolute;
   top: 54px;
@@ -139,17 +124,44 @@ header::after {
   background: url(../img/Downloads-this-week.png) no-repeat;
   background-position: -31px 0;
 }
-.steps .down_week h1 {
+.down-week__amount {
   color: #00b0ff;
   margin: 10px 0;
 }
-.steps .down_week p {
+.down-week__sub-header {
   font-size: 14px;
 }
-.steps .down_week span {
+.down-week__star {
   color: #979da6;
 }
-.steps .shopper {
+
+.TV {
+  margin-top: 40px;
+}
+
+.steps-button {
+  width: 80%;
+  margin-top: 30px;
+  color: #ffffff;
+  background: #00b0ff url(../img/download.png) center right 8% no-repeat;
+  border: 0;
+  padding: 30px 0;
+  font-size: 21px;
+  border-radius: 4px;
+}
+
+.down-here {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #00aaff;
+}
+
+.down-here_width {
+  width: 80%;
+}
+
+.shopper {
   display: inline-block;
   vertical-align: text-bottom;
 }
@@ -491,5 +503,3 @@ footer .copyright {
     right: 12px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
