@@ -63,7 +63,7 @@
   		<section class="company">
   			<div class="container">
   				<div class="row">
-  					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 item">
+  					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 company__item">
   						<a href="#"><span><img src="img/Cnn.png" alt=""></span></a>
   					</div>
   					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 item">
@@ -78,113 +78,179 @@
   				</div>
   			</div>
   		</section>
+
       	<!-- ALL FEATURES -->
   		<section class="tools">
   			<div class="container">
   				<div class="row">
-  					<h3>What we have to keep your Mac <span class="clean">clean and safe</span></h3>
+  					<h3 class="tools-header">What we have to keep your Mac <span class="tools-header__clean">clean and safe</span></h3>
   					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-						<div class="row first_line">
-                            <div class="hexagon" data-class="human">
-                                <img src="img/human.png">
-                                <p class="name_tool">Human assistance</p>
-                                <p class="desc">Your personal assistant has the solution for your technical problem - whether it is a minor annoyance or a catastrophic failure.</p>
+						<div class="row first-line">
+                            <div class="hexagon js-hexagon" data-class="human">
+                                <span class="hexagon__wrapper">
+                                    <i class="hexagon__icon"><img src="img/human.png"></i>
+                                    <p class="name-tool">Human assistance</p>
+                                    <p class="desc">Your personal assistant has the solution for your technical problem - whether it is a minor annoyance or a catastrophic failure.</p>                  
+                                </span>
+                            </div>                       
+
+                            <div class="hexagon js-hexagon" data-class="check">
+                                <span class="hexagon__wrapper">
+                                    <i class="hexagon__icon"><img src="img/check.png">
+                                    <p class="name-tool">Internet security</p>
+                                    <p class="desc">Protect your Mac from phishing attacks, malware, spyware, adware, viruses and identity theft while you're using the Internet.</p> 
+                                    </i>
+                                </span>
                             </div>
-                            <div class="hexagon" data-class="check">
-                                <img src="img/check.png">
-                                <p class="name_tool">Internet security</p>
-                                <p class="desc">Protect your Mac from phishing attacks, malware, spyware, adware, viruses and identity theft while you're using the Internet.</p>
+
+
+
+                           
+
+
+                             <div class="hexagon js-hexagon" data-class="flasher">
+                                <span class="hexagon__wrapper">
+                                    <i class="hexagon__icon"><img src="img/flasher.png">
+                                        <p class="name-tool">Anti-theft</p>
+                                        <p class="desc">If your Mac gets stolen, Anti-Theft will track its location and even make an iSight snapshot of the thief.</p>
+                                    </i>
+                                </span>
                             </div>
-                            <div class="hexagon" data-class="flasher">
-                                <img src="img/flasher.png">
-                                <p class="name_tool">Anti-theft</p>
-                                <p class="desc">If your Mac gets stolen, Anti-Theft will track its location and even make an iSight snapshot of the thief.</p>
+                            <div class="hexagon js-hexagon" data-class="scan">
+                                <span class="hexagon__wrapper">
+                                    <i class="hexagon__icon"><img src="img/scan.png">
+                                        <p class="name-tool">Fast cleanup</p>
+                                        <p class="desc">Quickly remove junk files (such as temporary caches, logs, unused language packages and legacy application parts) that may take up hard drive space and slow down your Mac.</p>                                    
+                                    </i>
+                                </span>
                             </div>
-                            <div class="hexagon" data-class="scan">
-                                <img src="img/scan.png">
-                                <p class="name_tool">Fast cleanup</p>
-                                <p class="desc">Quickly remove junk files (such as temporary caches, logs, unused language packages and legacy application parts) that may take up hard drive space and slow down your Mac.</p>
+            
+
+                             <div class="hexagon js-hexagon" data-class="pig">
+                                <span class="hexagon__wrapper">
+                                    <i class="hexagon__icon"><img src="img/pig.png">
+                                        <p class="name-tool">Duplicates finder</p>
+                                        <p class="desc">Delete unnecessary copies of your files and free up disk space on your Mac.</p>
+                                    </i>
+                                </span>
                             </div>
-                            <div class="hexagon" data-class="pig">
-                                <img src="img/pig.png">
-                                <p class="name_tool">Duplicates finder</p>
-                                <p class="desc">Delete unnecessary copies of your files and free up disk space on your Mac.</p>
-                            </div>
-                            <div class="hexagon" data-class="bell">
-                                <img src="img/bell.png">
-                                <p class="name_tool">Geek on demand</p>
-                                <p class="desc">Geek on Demand is the ultimate tool when you have a problem or question that is related to your Mac's health and need an expert's opinion or technical assistance.</p>
-                            </div>	   
+
+                            <div class="hexagon js-hexagon" data-class="bell">
+                                <span class="hexagon__wrapper">
+                                    <i class="hexagon__icon"><img src="img/bell.png">
+                                        <p class="name-tool">Geek on demand</p>
+                                        <p class="desc">Geek on Demand is the ultimate tool when you have a problem or question that is related to your Mac's health and need an expert's opinion or technical assistance.</p>
+                                    </i>
+                                </span>
+                            </div>                       
+                           
+                            	   
                         </div>
-                        <div class="row second_line">
-                            <div class="hexagon" data-class="sat">
-                                <img src="img/sat.png">
-                                <p class="name_tool">Update tracker</p>
-                                <p class="desc">With Update Tracker you will never miss out any important security patches and upgrades for most of your applications.</p>
-                            </div>
-                            <div class="hexagon" data-class="saif">
-                                <img src="img/saif.png">
-                                <p class="name_tool">Backup</p>
-                                <p class="desc">Backing up your important files and folders is an easy, fast and reliable way to keep them safe and secure.</p>
-                            </div>
-                            <div class="hexagon" data-class="circle">
-                                <img src="img/circle.png">
-                                <p class="name_tool">Files recovery</p>
-                                <p class="desc">Now you can recover files that were once deleted from the Trash!</p>
-                            </div>
-                            <div class="hexagon" data-class="kod">
-                                <img src="img/kod.png">
-                                <p class="name_tool">Disk usage</p>
-                                <p class="desc">Visualize the size of the folders on your hard drive so you can tell at a glance which folders are taking up the most space.</p>
-                            </div>
-                            <div class="hexagon" data-class="lastic">
-                                <img src="img/lastic.png">
-                                <p class="name_tool">Smart uninstaller</p>
-                                <p class="desc">Prevent future junk by making sure that you're not just sweeping old applications under the rug when you are trying to delete them.</p>
-                            </div>                                
+                        <div class="row second-line">
+
+                         <div class="hexagon js-hexagon" data-class="sat">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/sat.png">
+                                    <p class="name-tool">Update tracker</p>
+                                    <p class="desc">With Update Tracker you will never miss out any important security patches and upgrades for most of your applications.</p>
+                                </i>
+                            </span>
                         </div>
-                        <div class="row third_line">
-                            <div class="hexagon" data-class="focus">
-                                <img src="img/focus.png">
-                                <p class="name_tool">Data encryptor</p>
-                                <p class="desc">Make your restricted files absolutely invisible to anyone without the right password, protecting even your most sensitive information.</p>
-                            </div>
-                            <div class="hexagon" data-class="sign">
-                                <img src="img/sign.png">
-                                <p class="name_tool">Default apps</p>
-                                <p class="desc">The easiest way to define which application will open each file type.</p>
-                            </div>
-                            <div class="hexagon" data-class="delay">
-                                <img src="img/delay.png">
-                                <p class="name_tool">Shredder</p>
-                                <p class="desc">Securely delete files and folders that you don't ever want to be recovered.</p>
-                            </div>
-                            <div class="hexagon" data-class="papper">
-                                <img src="img/papper.png">
-                                <p class="name_tool">Files finder</p>
-                                <p class="desc">Quickly search for and find any lost or misplaced file, even if you don't know in which folder it is located.f</p>
-                            </div>
-                            <div class="hexagon" data-class="switch">
-                                <img src="img/switch.png">
-                                <p class="name_tool">Login items</p>
-                                <p class="desc">Take control of how fast your Mac boots up by deciding which applications launch every time you start it.</p>
-                            </div>
-                            <div class="hexagon" data-class="memory">
-                                <img src="img/memory.png">
-                                <p class="name_tool">Memory Cleaner</p>
-                                <p class="desc">Automatically optimizes and monitors your Mac’s RAM memory while you are performing your daily tasks.</p>
-                            </div>     
+                        <div class="hexagon js-hexagon" data-class="saif">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/saif.png">
+                                    <p class="name-tool">Backup</p>
+                                    <p class="desc">Backing up your important files and folders is an easy, fast and reliable way to keep them safe and secure.</p>
+                                </i>
+                            </span>
+                        </div>
+
+                        <div class="hexagon js-hexagon" data-class="circle">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/circle.png">
+                                    <p class="name-tool">Files recovery</p>
+                                    <p class="desc">Now you can recover files that were once deleted from the Trash!</p>
+                                </i>
+                            </span>
+                        </div>
+                        <div class="hexagon js-hexagon" data-class="kod">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/kod.png">
+                                    <p class="name-tool">Disk usage</p>
+                                    <p class="desc">Visualize the size of the folders on your hard drive so you can tell at a glance which folders are taking up the most space.</p>
+                                </i>
+                            </span>
+                        </div>                  
+                        <div class="hexagon js-hexagon" data-class="lastic">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/lastic.png">
+                                    <p class="name-tool">Smart uninstaller</p>
+                                    <p class="desc">Prevent future junk by making sure that you're not just sweeping old applications under the rug when you are trying to delete them.</p>
+                                </i>
+                            </span>
+                        </div>                           
+                                                            
+                        </div>
+                        <div class="row third-line">
+                        <div class="hexagon js-hexagon" data-class="focus">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/focus.png">
+                                    <p class="name-tool">Data encryptor</p>
+                                    <p class="desc">Make your restricted files absolutely invisible to anyone without the right password, protecting even your most sensitive information.</p>
+                                </i>
+                            </span>
+                        </div> 
+                        <div class="hexagon js-hexagon" data-class="sign">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/sign.png">
+                                    <p class="name-tool">Default apps</p>
+                                    <p class="desc">The easiest way to define which application will open each file type.</p>
+                                </i>
+                            </span>
+                        </div> 
+                        <div class="hexagon js-hexagon" data-class="delay">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/delay.png">
+                                    <p class="name-tool">Shredder</p>
+                                    <p class="desc">Securely delete files and folders that you don't ever want to be recovered.</p>
+                                </i>
+                            </span>
+                        </div> 
+                        <div class="hexagon js-hexagon" data-class="papper">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/papper.png">
+                                    <p class="name-tool">Files finder</p>
+                                    <p class="desc">Quickly search for and find any lost or misplaced file, even if you don't know in which folder it is located.f</p>
+                                </i>
+                            </span>
+                        </div> 
+                        <div class="hexagon js-hexagon" data-class="switch">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/switch.png">
+                                    <p class="name-tool">Login items</p>
+                                    <p class="desc">Take control of how fast your Mac boots up by deciding which applications launch every time you start it.</p>
+                                </i>
+                            </span>
+                        </div>                          
+                        <div class="hexagon js-hexagon" data-class="memory">
+                            <span class="hexagon__wrapper">
+                                <i class="hexagon__icon"><img src="img/memory.png">
+                                    <p class="name-tool">Memory Cleaner</p>
+                                    <p class="desc">Automatically optimizes and monitors your Mac’s RAM memory while you are performing your daily tasks.</p>
+                                </i>
+                            </span>
+                        </div>        
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> 
                        <div class="description">
-                           <div class="description_up">
-                               <div class="foto"></div>
-                               <p class="name">Memory Cleaner</p>
+                           <div class="description-up">
+                               <div class="description-up__foto"></div>
+                               <p class="description-up__name">Memory Cleaner</p>
                            </div>
-                           <div class="description_down">
-                               <p class="text">Automatically optimizes and monitors your Mac’s RAM memory while you are performing your daily tasks.</p>
-                               <button>Download Now</button>
+                           <div class="description-down">
+                               <p class="description-down__text">Automatically optimizes and monitors your Mac’s RAM memory while you are performing your daily tasks.</p>
+                               <button class="description-down__button">Download Now</button>
                            </div>
                        </div>         
   					</div>
@@ -195,37 +261,38 @@
   		<section class="reviews">
 	  		<div class="container">
 	  			<div class="row">
-	  				<h3>Checkout Some Reviews from our Users</h3>
-	  				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 item">
-	  					<div class="text">
-	  						<div class="star"></div>
-	  						<p>“I just renewed my subscription with Mc. Keeper. I like it, I feel my computer is well protected.”</p>
+	  				<h3 class="reviews__header">Checkout Some Reviews from our Users</h3>
+	  				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	  					<div class="reviews-text">
+	  						<div class="reviews-text__star"></div>
+	  						<p class="reviews-text__comment">“I just renewed my subscription with Mc. Keeper. I like it, I feel my computer is well protected.”</p>
 	  					</div>
-	  					<div class="client">
-	  						<p class="name">Michael T </p>
-	  						<p class="study">Oxfordshire, United Kingdom, 12 May 2016</p>
-	  					</div>
-	  				</div>
-	  				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 item">
-	  					<div class="text">
-	  						<div class="star"></div>
-	  						<p>“I just renewed my subscription with Mc. Keeper. I like it, I feel my computer is well protected.”</p>
-	  					</div>
-	  					<div class="client">
-	  						<p class="name">Michael T </p>
-	  						<p class="study">Oxfordshire, United Kingdom, 12 May 2016</p>
+	  					<div class="reviews-client">
+	  						<p class="reviews-client__name">Michael T </p>
+	  						<p class="reviews-client__study">Oxfordshire, United Kingdom, 12 May 2016</p>
 	  					</div>
 	  				</div>
-	  				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 item">
-	  					<div class="text">
-	  						<div class="star"></div>
-	  						<p>“I just renewed my subscription with Mc. Keeper. I like it, I feel my computer is well protected.”</p>
-	  					</div>
-	  					<div class="client">
-	  						<p class="name">Michael T </p>
-	  						<p class="study">Oxfordshire, United Kingdom, 12 May 2016</p>
-	  					</div>
-	  				</div>
+	  				
+	  				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="reviews-text">
+                            <div class="reviews-text__star"></div>
+                            <p class="reviews-text__comment">“I just renewed my subscription with Mc. Keeper. I like it, I feel my computer is well protected.”</p>
+                        </div>
+                        <div class="reviews-client">
+                            <p class="reviews-client__name">Michael T </p>
+                            <p class="reviews-client__study">Oxfordshire, United Kingdom, 12 May 2016</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="reviews-text">
+                            <div class="reviews-text__star"></div>
+                            <p class="reviews-text__comment">“I just renewed my subscription with Mc. Keeper. I like it, I feel my computer is well protected.”</p>
+                        </div>
+                        <div class="reviews-client">
+                            <p class="reviews-client__name">Michael T </p>
+                            <p class="reviews-client__study">Oxfordshire, United Kingdom, 12 May 2016</p>
+                        </div>
+                    </div>
 	  			</div>
 	  		</div>  			
   		</section>
@@ -233,19 +300,19 @@
   		<section class="world">
   			<div class="container">
   				<div class="row">
-  					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 first_place">
-  						<h3 class="number">#1</h3>
-  						<p>System Utility for MAC <br>in the World **</p>
+  					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 first-place">
+  						<h3 class="first-place__number">#1</h3>
+  						<p class="first-place__system">System Utility for MAC <br>in the World **</p>
   					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 download_button">
-	  					<button>Download Now</button>
-  						<p class="down-here"><a href="#">or Click here to download</a></p>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 download-button">
+	  					<button class="download-button__item">Download Now</button>
+  						<p class="download-button__down-here"><a href="#">or Click here to download</a></p>
   					</div>
   					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 map">
-  						<p>Trusted by millions</p>
-  						<p>more than</p>
-  						<h2>+<span class="amount">27 000 000</span>*</h2>
-  						<p>downloads worldwide</p>
+  						<p class="map__item1">Trusted by millions</p>
+  						<p class="map__item2">more than</p>
+  						<h2 class="map__header">+<span class="amount">27 000 000</span>*</h2>
+  						<p class="map__item3">downloads worldwide</p>
   					</div>
   				</div>
   			</div>
@@ -253,17 +320,17 @@
 		<!-- FOOTER -->
   		<footer>
   			<div class="menu">
-  				<ul>
-  					<li><a href="#">App</a></li>
-  					<li><a href="#">Privacy police</a></li>
-  					<li><a href="#">Company</a></li>
-  					<li><a href="#">EULA</a></li>
-  					<li><a href="#">Support</a></li>
-  					<li><a href="#">Unistall</a></li>
+  				<ul class="footer-list">
+  					<li class="footer-list__item"><a href="#" class="footer-list__link">App</a></li>
+  					<li class="footer-list__item"><a href="#" class="footer-list__link">Privacy police</a></li>
+  					<li class="footer-list__item"><a href="#" class="footer-list__link">Company</a></li>
+  					<li class="footer-list__item"><a href="#" class="footer-list__link">EULA</a></li>
+  					<li class="footer-list__item"><a href="#" class="footer-list__link">Support</a></li>
+  					<li class="footer-list__item"><a href="#" class="footer-list__link">Unistall</a></li>
   				</ul>
   			</div>
-  			<p>*According to our Internal statistics</p>
-  			<p>** This statement is solely our subjective opinion and is used purely for advertising and promotional purposes.<br>You may be presented with an optional offer(s) during installation <a href="#" class="learn_more">learn more ></a></p>
+  			<p class="footer-text">*According to our Internal statistics</p>
+  			<p class="footer-text">** This statement is solely our subjective opinion and is used purely for advertising and promotional purposes.<br>You may be presented with an optional offer(s) during installation <a href="#" class="footer-text__more">learn more ></a></p>
   			<p class="copyright">Copyright &#169; 2016 Kromtech Alliance Corp. All rights reserved.</p>
   		</footer>
 
@@ -271,8 +338,8 @@
 	  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <!--<script src="js/bootstrap.min.js"></script>
-	    <script src="js/common.js"></script>-->
+	    <!-- <script src="js/bootstrap.min.js"></script> -->
+	    <!-- <script src="js/common.js"></script> -->
       <script src="js/production.min.js"></script>      
   	</body>
 </html>  	

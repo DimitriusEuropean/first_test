@@ -190,300 +190,379 @@ header {
 		vertical-align: text-bottom;
 }
 
+.block {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.six {
+	display: inline-block;
+	width: 100px;
+	height: 55px;
+	margin-right: 15px;
+	position: relative;
+	background: red url(../img/icon__sprire_big.png) center no-repeat;
+    background-position: -175px -12px;
+		&:before {
+		content: "";
+		position: absolute;
+		top: -24px; 
+		left: 0;
+		width: 0;
+		height: 0;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		border-bottom: 25px solid red;
+		}
+		&:after {
+		content: "";
+		position: absolute;
+		bottom: -24px; 
+		left: 0;
+		width: 0;
+		height: 0;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		border-top: 25px solid red;
+	}
+}
+
+
 .company {
 	border-top: 1px solid #f1f7fa;
 	padding: 25px 0;
-	 	.item {
+	 	&__item {
 		text-align: center;
 	}
 }
 
 .hexagon {
-	height: 117px;
-    width: 106px;
-    text-align: center;
-    line-height: 117px;
-    display: inline-block;
-	background: url(../img/hexagon.png) center no-repeat;
-	&:hover {
-		background: url(../img/hover1.png) center no-repeat;
-	}
-	
-	.desc,  .name_tool {
+        display: inline-block;
+        margin-right: 15px;
+        position: relative;
+        width: 92px;
+        height: 53px;
+        background: #ffffff;
+        margin-top: 27px;
+        box-shadow: 0 0 2px #cbcbcb;
+        cursor: pointer;
+    }
+.hexagon:before, .hexagon:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 65px;
+        height: 65px;
+        transform: scaleY(0.6) rotate(-45deg);
+        background: inherit;
+        left: 13px;
+        box-shadow: 0 0 2px #cbcbcb;
+    }
+.hexagon:before {
+        top: -33px;
+    }
+.hexagon:after {
+        bottom: -33px;
+    }
+.hexagon__wrapper {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 92px;
+        height: 53px;
+        z-index: 2;
+        background: inherit;
+    }
+.hexagon__icon {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 2px auto 0;
+    }
+.js-hexagon-selected.hexagon {
+        box-shadow: 0 0 2px #00a4ff;
+    }
+.js-hexagon-selected.hexagon:before {
+    box-shadow: 0 0 2px #00a4ff;
+}
+.js-hexagon-selected.hexagon:after {
+    box-shadow: 0 0 2px #00a4ff, -5px 5px 0 0 #e9e9e9;
+}
+
+.desc,  .name-tool {
 	display: none;
 	}
-
-}
-
-
+	
 .tools {
 	padding: 40px 0;
-	background: $tool_bg;
+	background: $tool_bg;	
+}
 
-	h3 {
+.description {
+	text-align: center;
+	margin-top: 46px;
+}
+
+.description-up {
+	background: #f8fafb;
+	padding: 15px 0 10px 0;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px 5px 0 0;
+
+	&__foto {
+		height: 80px;
+	    width: 80px;
+	    margin: 0 auto;
+	    background: url(../img/icon__sprire_big.png) center no-repeat;
+	    background-position: -175px -12px;
+	    &_human {
+			background-position: 1px -12px;
+		}
+
+		&_check {
+			background-position: -1261px -13px;
+		}
+
+		&_flasher {
+			background-position: -266px -10px;
+		}
+
+		&_scan {
+			background-position: -1341px -14px;
+		}
+
+		&_pig {
+			background-position: -1432px -11px
+		}
+
+		&_bell {
+			background-position: -85px -11px;
+		}
+
+		&_sat {
+			background-position: -1097px -11px;
+		}
+
+		&_saif {
+			background-position: -362px -12px;
+		}
+
+		&_circle {
+			background-position: -1180px -12px;
+		}
+
+		&_kod {
+			background-position: -994px -12px;
+		}
+
+		&_lastic {
+			background-position: -895px -15px;
+		}
+
+		&_focus {
+			background-position: -536px -10px;
+		}
+
+		&_sign {
+			background-position: -454px -12px;
+		}
+
+		&_delay {
+			background-position: -797px -13px;
+		}
+
+		&_papper {
+			background-position: -704px -14px;
+		}
+
+		&_switch {
+			background-position: -617px -12px;
+		}
+
+		&_memory {
+			background-position: -176px -12px;
+		}
+
+	}
+
+	&__name {
+		color: #3a3a3a;
+		margin-top: 15px;
+		text-transform: uppercase;
+	}
+
+}
+	.description-down {
+		padding: 30px 20px 20px 20px;
+		border: 1px solid #dbdbdb;
+		border-radius: 0px 0px 5px 5px;
+		border-top: 0;
+		background: #ffffff;
+
+		&__text {
+			height: 90px;
+			font-size: 14px;
+		}
+
+		&__button {
+			font-family: "ProximaNova-Semibold", "ProximaNova-Light", sans-serif;
+			font-size: 14px;
+			color: $click;
+			background: #ffffff;
+			border: 1px solid $click;
+			border-radius: 3px;
+			padding: 16px 37px 16px 37px;
+			margin-top: 15px;
+
+		}
+	}
+
+
+.first-line {
+	margin-top: 70px;
+	background: #f3f6f8;
+	text-align: center;
+}
+.third-line {
+	text-align: center;
+}
+
+.second-line {
+	margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tools-header {
 		color: #181818;
 		text-align: center;
-	}
-
-	.clean {
-		color: $click;
-	}
-
-	.first_line {
-		margin-top: 40px;
-		background: #f3f6f8;
-		text-align: center;
-	}
-	.third_line {
-		text-align: center;
-	}
-
-	.second_line {
-		text-align: center;
-	}
-
-	.description {
-		text-align: center;
-		margin-top: 46px;
-
-		.description_up {
-			background: #f8fafb;
-			padding: 15px 0 10px 0;
-			border: 1px solid #dbdbdb;
-			border-radius: 5px 5px 0 0;
-
-			.foto {
-				height: 80px;
-			    width: 80px;
-			    margin: 0 auto;
-			    background: url(../img/icon__sprire_big.png) center no-repeat;
-			    background-position: -175px -12px;
-			    &.human {
-					background-position: 1px -12px;
-				}
-
-				&.check {
-					background-position: -1261px -13px;
-				}
-
-				&.flasher {
-					background-position: -266px -10px;
-				}
-
-				&.scan {
-					background-position: -1341px -14px;
-				}
-
-				&.pig {
-					background-position: -1432px -11px
-				}
-
-				&.bell {
-					background-position: -85px -11px;
-				}
-
-				&.sat {
-					background-position: -1097px -11px;
-				}
-
-				&.saif {
-					background-position: -362px -12px;
-				}
-
-				&.circle {
-					background-position: -1180px -12px;
-				}
-
-				&.kod {
-					background-position: -994px -12px;
-				}
-
-				&.lastic {
-					background-position: -895px -15px;
-				}
-
-				&.focus {
-					background-position: -536px -10px;
-				}
-
-				&.sign {
-					background-position: -454px -12px;
-				}
-
-				&.delay {
-					background-position: -797px -13px;
-				}
-
-				&.papper {
-					background-position: -704px -14px;
-				}
-
-				&.switch {
-					background-position: -617px -12px;
-				}
-
-				&.memory {
-					background-position: -176px -12px;
-				}
-
-			}
-
-			.name {
-				color: #3a3a3a;
-				margin-top: 15px;
-				text-transform: uppercase;
-			}
-
+		&__clean {
+			color: $click;
 		}
-		.description_down {
-			padding: 30px 20px 20px 20px;
-			border: 1px solid #dbdbdb;
-			border-radius: 0px 0px 5px 5px;
-			border-top: 0;
-			background: #ffffff;
-
-			.text {
-				height: 90px;
-				font-size: 14px;
-			}
-
-			button {
-				font-family: "ProximaNova-Semibold", "ProximaNova-Light", sans-serif;
-				font-size: 14px;
-				color: $click;
-				background: #ffffff;
-				border: 1px solid $click;
-				border-radius: 3px;
-				padding: 16px 37px 16px 37px;
-				margin-top: 15px;
-
-			}
-		}
-
-	
 	}
-}
+
 
 .reviews {
 	border-bottom: 1px solid #e9e9e9; 
 	padding-bottom: 50px;
-		h3 {
+	&__header {
 		text-align: center;
 		margin-bottom: 40px;
 		padding: 0 15px;
 	}
+}
 
-	.item {
-	color: #737373;
-	.text {
-		padding: 20px 30px;
-		border: 1px solid #dddddd;
-		.star {
-			height: 10px;
-			width: 100px;
-			background: url(../img/star.png) center left repeat;
-			margin-bottom: 15px;
-		}
+.reviews-text {
+	padding: 20px 30px;
+	border: 1px solid #dddddd;
+	&__star {
+		height: 10px;
+		width: 100px;
+		background: url(../img/star.png) center left repeat;
+		margin-bottom: 15px;
 	}
-	.client {
-		padding: 20px 30px;
-		border: 1px solid #dddddd;
-		border-top: 0;
-		.name {
+	&__comment {
+		color: #737373;
+	}
+}
+
+.reviews-client {
+	padding: 20px 30px;
+	border: 1px solid #dddddd;
+	border-top: 0;
+		&__name {
 			color: #111111;
 		}
-		.study {
+		&__study {
 			color: #878787;
 		}
-	}		
-	}
 }
 
 .world {
 	padding: 40px 0;
-	.first_place {
-		text-align: center;
-		background: url(../img/five_stars.png) center top no-repeat;
-		h3 {
-			font-family:  "ProximaNova-Semibold", sans-serif;
-			margin-top: 29px;
-		}
-		p {
-			font-size: 14px;
-		}
-	}
-	.download_button {
-		text-align: center;
-	}
+}
 
-	button {
-	width: 80%;
-	color: #ffffff;
-	background: #00b0ff url(../img/download.png) center right 8% no-repeat;
-	border: 0;
-	border-radius: 4px;
-	padding: 30px 0;
-	font-size: 21px;
+.first-place {
+	text-align: center;
+	background: url(../img/five_stars.png) center top no-repeat;
+	&__number{
+		font-family:  "ProximaNova-Semibold", sans-serif;
+		margin-top: 29px;
 	}
+	&__system {
+		font-size: 14px;
+	}
+}
+.download-button {
+	text-align: center;
+		&__item {
+			width: 80%;
+			color: #ffffff;
+			background: #00b0ff url(../img/download.png) center right 8% no-repeat;
+			border: 0;
+			border-radius: 4px;
+			padding: 30px 0;
+			font-size: 21px;
+		}
 
-	.down_here {
+	&__down-here {
 		text-align: center;
 		margin-top: 10px;
 		font-size: 14px;
 		color: $click;
 	}
+}
 
-	.map {
-		text-align: center;
-		background: url(../img/map.png) center no-repeat;
-	    background-size: contain;
-	    p {
-			font-size: 14px;
-			margin-bottom: 0px;
-			&:first-child {
-				font-family: "ProximaNova-Bold", sans-serif;
-			}
-		}
 
-		h2 {
-			color: #1aa1eb;
-			margin: 0;
+.map {
+	text-align: center;
+	background: url(../img/map.png) center no-repeat;
+    background-size: contain;
+    &__item1 {
+		font-size: 14px;
+		margin-bottom: 0px;
+		&:first-child {
+			font-family: "ProximaNova-Bold", sans-serif;
 		}
+	}
+
+	&__header {
+		color: #1aa1eb;
+		margin: 0;
 	}
 }
 
-footer {
-	.menu {
-		ul {
-			list-style: none;
-			padding: 18px 0;
-			margin: 0 0 20px 0;
-			text-align: center;
-		    border-bottom: 1px solid #e9e9e9;
-		    border-top: 1px solid #e9e9e9;
-		    li {
-				display: inline-block;
-				padding: 0 8px;
-				a {
-					color: #434343;
-				}
-			}
-		}
+
+.footer-list {
+	list-style: none;
+	padding: 18px 0;
+	margin: 0 0 20px 0;
+	text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    &__item {
+		display: inline-block;
+		padding: 0 8px;
 	}
-	p {
+	&__link {
+		color: #434343;
+	}
+}
+
+.footer-text {
 		color: #747a7d; 
 		text-align: center;
 		font-size: 12px;
-	}
-
-	.learn_more {
+	&__more {
 		color: #00abff;
+		}
 	}
 
-	.copyright {
-		color: #989898;
-	}
+.copyright {
+	color: #989898;
 }
+
 
 
 @media all and (max-width: 769px){
